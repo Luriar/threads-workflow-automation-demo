@@ -37,3 +37,14 @@ Python 3.10 이상을 권장합니다. 외부 API 키나 실서비스 계정이 
 - [전체 인턴 및 프로젝트 목록](https://github.com/Luriar/dinostudio-internship-portfolio)
 
 **주의:** 이 공개 코드는 기존 회사 프로젝트를 이전하거나 일부 수정하여 공개한 것이 아닙니다. 실제 업무 수행 내용은 설명하되 고객 데이터나 정량 성과를 공개하지 않습니다.
+
+## 실행 가능한 응답 검토 큐
+
+`review_queue.py`는 가상 메시지에서 중복을 제거하고, 응답을 바로 게시하지 않고 담당자의 확인을 받도록 구성한 SQLite 기반 데모입니다. 상태 전이와 기록, 잘못된 배치 롤백을 테스트할 수 있습니다.
+
+```bash
+python review_queue.py
+python -m unittest discover -s tests -v
+```
+
+[응답 처리 흐름](docs/REVIEW_FLOW.md). 실제 Threads로 게시하거나 회사 운영 규칙을 공개하지 않습니다.
