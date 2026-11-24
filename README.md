@@ -2,6 +2,8 @@
 
 > 이 저장소는 실제 인턴 및 별도 프로젝트 경험을 설명하기 위해 새로 작성한 공개 포트폴리오입니다. 회사의 원본 소스, 데이터베이스, 고객 정보, 운영 설정, 인증정보를 포함하지 않습니다. demo.py와 예시 데이터는 2026년에 처음부터 작성한 독립적인 오프라인 재현 예제로, 2024년 실제 운영 코드를 복제하거나 당시 배포 사실을 증명하지 않습니다.
 
+**공개 코드 작성 시점 및 방식:** 2026년 포트폴리오 정리를 위해 AI의 도움을 받아 새로 작성한 독립 데모입니다. 2024년 당시 직접 수행한 실무 경험과 이 공개 코드의 구현 및 검증 범위는 구분합니다.
+
 **기간:** 인턴 말기 및 2024.10 초 파일 수정  
 **실제 업무 기술:** Python, Selenium, MySQL, Google Sheets 연동
 
@@ -48,3 +50,12 @@ python -m unittest discover -s tests -v
 ```
 
 [응답 처리 흐름](docs/REVIEW_FLOW.md). 실제 Threads로 게시하거나 회사 운영 규칙을 공개하지 않습니다.
+
+## 재현 및 검증 범위
+
+가상 메시지의 중복 제거, 사람의 검토 및 승인 상태 기록, 잘못된 배치 롤백을 검사합니다.
+
+2026년 공개 데모의 테스트입니다. 2024년 실무의 성능 수치나 배포 증거로 해석하지 않습니다.
+
+- [자동 테스트 실행 이력](https://github.com/Luriar/threads-workflow-automation-demo/actions)
+- [공개 데모 통합 검증](https://github.com/Luriar/dinostudio-internship-portfolio/blob/main/docs/INTEGRATION.md)
